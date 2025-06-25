@@ -1,6 +1,6 @@
 import {useState} from 'react';
 
-export default function Experience(){
+export default function General(){
 
     const [inputs, setInputs]=useState("");
 
@@ -14,14 +14,15 @@ export default function Experience(){
         const value = event.target.value;
         setInputs(values => ({...values, [name]:value}) );
     }
+            
 
     return(
-
-        <div id="experience-container">
-            <h1>Expericence</h1>
+        <div id="general-info-container">
+            <h1>General Information</h1>
             <p>Please fill out the information below</p>
-            <div id="experience-form-container">
-                <form action="./App.jsx" method="get" onSubmit={handleSubmit}>
+
+            <div id="general-info-form-container">
+                <form action="./GeneralInfo.jsx" method="get" onSubmit={handleSubmit}>
                     <div className="form-contents">
                         <label htmlFor="fname">First Name:</label>
                         <input 

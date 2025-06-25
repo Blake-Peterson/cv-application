@@ -1,22 +1,22 @@
-import {GeneralInfo} from "./components/GeneralInfo";
-import {Education} from "./components/Education";
-import {Expericence} from "./components/Experience";
+import General from "./components/General";
+import Education from "./components/Education";
+import Experience from "./components/Experience";
 
-import './App.css'
+import './styles/App.css';
 
 function App() {
   return (
-    <>
-    <div>
-      <GeneralInfo></GeneralInfo>
+    <div id='app-container'>
+      <div>
+        <General></General>
+      </div>
+      <div>
+        <Education></Education>
+      </div>
+      <div>
+        <Experience></Experience>
+      </div>
     </div>
-    <div>
-      <Education></Education>
-    </div>
-    <div>
-      <Experience></Experience>
-    </div>
-    </>
   )
 }
 
