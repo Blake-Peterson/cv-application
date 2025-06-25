@@ -22,43 +22,42 @@ export default function Education(){
             <div id="education-form-container">
                 <form action="./App.jsx" method="get" onSubmit={handleSubmit}>
                     <div className="form-contents">
-                        <label htmlFor="fname">First Name:</label>
+                        <label htmlFor="school">Name of School:</label>
                         <input 
                             type="text" 
-                            id="fname" 
-                            name="fname"
+                            id="school" 
+                            name="school"
                             value = {inputs.fname}
                             onChange={handleChange}
                         />
                     </div>
                     <div className="form-contents">
-                        <label htmlFor="lname">Last Name:</label>
+                        <label htmlFor="major">Major:</label>
                         <input 
                             type="text"     
-                            id="lname" 
-                            name="lname"
+                            id="major" 
+                            name="major"
                             value = {inputs.lname}
                             onChange={handleChange}
                         />
                     </div>
                     <div className="form-contents">
-                        <label htmlFor="email">Email Address:</label>
+                        <label htmlFor="school-start">School Start Date:</label>
                         <input 
-                            type="email" 
-                            id="email" 
-                            name="email"
+                            type="date" 
+                            id="school-start" 
+                            name="school-start"
                             value = {inputs.email}
                             onChange={handleChange}
                         />
                     </div>
                     <div className="form-contents">
-                        <label htmlFor="phone">Phone Number:</label>
+                        <label htmlFor="school-end">School End Date:</label>
                         <input 
-                            type="tel" 
-                            id="phone" 
-                            name="phone"
-                            value = {inputs.cellphone}
-                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                            type="date" 
+                            id="school-end" 
+                            name="school-end"
+                            value = {inputs.email}
                             onChange={handleChange}
                         />
                     </div>
