@@ -16,50 +16,58 @@ export default function Experience(){
     }
 
     return(
-
         <div id="experience-container">
             <h1>Expericence</h1>
             <p>Please fill out the information below</p>
             <div id="experience-form-container">
                 <form action="./App.jsx" method="get" onSubmit={handleSubmit}>
                     <div className="form-contents">
-                        <label htmlFor="fname">First Name:</label>
+                        <label htmlFor="company_name">Company Name:</label>
                         <input 
                             type="text" 
-                            id="fname" 
-                            name="fname"
-                            value = {inputs.fname}
+                            id="company_name" 
+                            name="company_name"
+                            value = {inputs.company_name}
                             onChange={handleChange}
                         />
                     </div>
                     <div className="form-contents">
-                        <label htmlFor="lname">Last Name:</label>
+                        <label htmlFor="job_title">Job Title</label>
                         <input 
                             type="text"     
-                            id="lname" 
-                            name="lname"
-                            value = {inputs.lname}
+                            id="job_title" 
+                            name="job_title"
+                            value = {inputs.job_title}
                             onChange={handleChange}
                         />
                     </div>
                     <div className="form-contents">
-                        <label htmlFor="email">Email Address:</label>
+                        <label htmlFor="description">Job Description</label>
                         <input 
-                            type="email" 
-                            id="email" 
-                            name="email"
-                            value = {inputs.email}
+                            type="text"     
+                            id="description" 
+                            name="description"
+                            value = {inputs.description}
                             onChange={handleChange}
                         />
                     </div>
                     <div className="form-contents">
-                        <label htmlFor="phone">Phone Number:</label>
+                        <label htmlFor="job_start_date">Start Date:</label>
                         <input 
-                            type="tel" 
-                            id="phone" 
-                            name="phone"
-                            value = {inputs.cellphone}
-                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                            type="date" 
+                            id="job_start_date" 
+                            name="job_start_date"
+                            value = {inputs.job_start_date}
+                            onChange={handleChange}
+                        />
+                    </div>
+                    <div className="form-contents">
+                        <label htmlFor="job_end_date">End Date:</label>
+                        <input 
+                            type="date" 
+                            id="job_end_date" 
+                            name="job_end_date"
+                            value = {inputs.job_end_date}
                             onChange={handleChange}
                         />
                     </div>

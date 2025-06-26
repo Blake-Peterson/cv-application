@@ -27,7 +27,7 @@ export default function Education(){
                             type="text" 
                             id="school" 
                             name="school"
-                            value = {inputs.fname}
+                            value = {inputs.school}
                             onChange={handleChange}
                         />
                     </div>
@@ -37,27 +37,27 @@ export default function Education(){
                             type="text"     
                             id="major" 
                             name="major"
-                            value = {inputs.lname}
+                            value = {inputs.major}
                             onChange={handleChange}
                         />
                     </div>
                     <div className="form-contents">
-                        <label htmlFor="school-start">School Start Date:</label>
+                        <label htmlFor="school_start">School Start Date:</label>
                         <input 
                             type="date" 
-                            id="school-start" 
-                            name="school-start"
-                            value = {inputs.email}
+                            id="school_start" 
+                            name="school_start"
+                            value = {inputs.school_start}
                             onChange={handleChange}
                         />
                     </div>
                     <div className="form-contents">
-                        <label htmlFor="school-end">School End Date:</label>
+                        <label htmlFor="school_end">School End Date:</label>
                         <input 
                             type="date" 
-                            id="school-end" 
-                            name="school-end"
-                            value = {inputs.email}
+                            id="school_end" 
+                            name="school_end"
+                            value = {inputs.school_end}
                             onChange={handleChange}
                         />
                     </div>
